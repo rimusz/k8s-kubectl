@@ -4,7 +4,7 @@
 [![Docker Repository on Quay](https://quay.io/repository/rimusz/k8s-kubectl/status "Docker Repository on Quay")](https://quay.io/repository/rimusz/k8s-kubectl)
 
 ## Supported tags and respective `Dockerfile` links
-* `v1.9.2`, `latest`    [(v1.9.2/Dockerfile)](https://github.com/lachie83/k8s-kubectl/blob/v1.9.2/Dockerfile)
+* `v1.9.2`, `latest`    [(v1.9.2/Dockerfile)](https://github.com/rimusz/k8s-kubectl/blob/v1.9.2/Dockerfile)
 
 ## Overview
 This container provides the Kubernetes client kubectl which can be used to interact with a Kubernetes cluster
