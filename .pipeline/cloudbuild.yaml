@@ -13,8 +13,8 @@ steps:
   - |
     source TAG
     docker build \
-      -t quay.io/rimusz/k8s-helm:latest \
-      -t quay.io/rimusz/k8s-helm:$${HELM_TAG} .
+      -t quay.io/rimusz/k8s-kubectl:latest \
+      -t quay.io/rimusz/k8s-kubectl:$${K8S_TAG} .
   id: 'build_image'
 
 # pull quay.io robot creds from bucket
@@ -32,7 +32,7 @@ steps:
   - |
     source /workspace/robot.creds
     docker login -u=$${QUSER} -p=$${PASSWORD} quay.io
-    docker push quay.io/rimusz/k8s-helm
+    docker push quay.io/rimusz/k8s-kubectl
   id: push_image_quay_io
   waitFor:
   - 'fetch_robot_creds'
